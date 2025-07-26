@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - شركة البركة</title>
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> صفحة الرئيسية</a></li>
+                <li><a href="products.html"><i class="fa-solid fa-box"></i> المنتجات</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> موقع الشركة</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="images/llooggoo.jpg" alt="شركة البركة">
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <h1>لوحة التحكم - إضافة المنتجات</h1>
+        <form id="productForm">
+            <label for="title">اسم المنتج:</label>
+            <input type="text" id="title" required>
+
+            <label for="prop">الخاصية:</label>
+            <input type="text" id="prop" placeholder="مثال: الطول" required>
+
+            <label for="value">القيمة:</label>
+            <input type="text" id="value" placeholder="مثال: 6" required>
+
+            <label for="unit">الوحدة:</label>
+            <input type="text" id="unit" placeholder="مثال: متر" required>
+
+            <button type="submit">إضافة المنتج</button>
+        </form>
+
+        <div class="product-list" id="productList"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/llooggoo.jpg" alt="Company Logo">
+            <p>نحن ؤواد في مجال الصناعات المعدنية منذ اكثر من 25 عاماً نقدم منتجات عالية الجودةبأسعار تنافسية </p>
+        </div>
+        <div class="footer-links">
+            <h2>روابط سريعة</h2>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> صفحة الرئيسية</a></li>
+                <li><a href="#header"><i class="fa-solid fa-location-dot"></i> موقع الشركة</a></li>
+                <li><a href="#"><i class="fa-solid fa-box"></i> منتجاتنا</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h2>خدماتنا</h2>
+            <ul>
+                <li>تطعيج الحديد</li>
+                <li>سحب بواري</li>
+                <li>صفائح الحديد</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h2>للتواصل معنا</h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-square-phone"></i> +963 963 963 963</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> سوريا, حلب, حمص</a></li>
+                <li><a href="#"><i class="fa-solid fa-mail-bulk"></i> info@albarakametal.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+
+</html>
